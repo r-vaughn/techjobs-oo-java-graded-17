@@ -1,7 +1,9 @@
 package org.launchcode.techjobs.oo;
 
 import org.junit.Test;
+import org.testng.Assert;
 
+import static java.lang.System.lineSeparator;
 import static org.testng.Assert.*;
 
 public class JobTest {
@@ -25,11 +27,11 @@ public class JobTest {
         assertTrue(testJobOne.getCoreCompetency() instanceof CoreCompetency);
         assertTrue(testJobOne.getName() instanceof String);
 
-        assertEquals("ACME", testJobOne.getEmployer());
-        assertEquals("Desert", testJobOne.getLocation());
-        assertEquals("Quality control", testJobOne.getPositionType());
-        assertEquals("Persistence", testJobOne.getCoreCompetency());
-        assertEquals("Product tester", testJobOne.getName());
+        assertEquals("ACME", String.valueOf(testJobOne.getEmployer()));
+        assertEquals("Desert", String.valueOf(testJobOne.getLocation()));
+        assertEquals("Quality control", String.valueOf(testJobOne.getPositionType()));
+        assertEquals("Persistence", String.valueOf(testJobOne.getCoreCompetency()));
+        assertEquals("Product tester", String.valueOf(testJobOne.getName()));
 
     }
 
@@ -39,5 +41,38 @@ public class JobTest {
         Job testJobTwo = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
         assertFalse(testJobOne.equals(testJobTwo));
+    }
+
+    @Test
+    public void testToStringStartsAndEndsWithNewLine() {
+//        toString() should return a string containing blank line at beginning and end of job information
+
+        Job testJob = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+
+
+        String firstCharTwo = testJob.toString().substring(0, 2);
+        String lastCharTwo = testJob.toString().substring(testJob.toString().length()-2, testJob.toString().length());
+
+        assertEquals(firstCharTwo, lineSeparator());
+        assertEquals(lastCharTwo, lineSeparator());
+    }
+
+    @Test
+    public void testToStringContainsCorrectLabelsAndData() {
+
+        Job testJob = new Job("Product tester", new Employer("ACME"),new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        String lineSeparator = System.lineSeparator();
+
+        String jobLabels = (
+                lineSeparator +
+                "ID: " + testJob.getId() + "\n" +
+                "Name: " + testJob.getName() + "\n" +
+                "Employer: " + testJob.getEmployer() + "\n" +
+                "Location: " + testJob.getLocation() + "\n" +
+                "Position Type: " + testJob.getPositionType() + "\n" +
+                "Core Competency: " + testJob.getCoreCompetency() + lineSeparator
+                );
+
+        assertEquals(jobLabels, testJob.toString());
     }
 }

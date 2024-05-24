@@ -2,6 +2,8 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
+import static java.lang.System.lineSeparator;
+
 public class Job {
 
     private int id;
@@ -45,6 +47,24 @@ public class Job {
     public int hashCode() {
         return Objects.hash(getId());
     }
+
+//    @Override
+    public String toString() {
+
+        String lineSeparator = System.lineSeparator();
+        String jobListing =
+                ("ID: " + this.getId() + "\n" +
+                 "Name: " + this.getName() + "\n" +
+                 "Employer: " + this.getEmployer() + "\n" +
+                 "Location: " + this.getLocation() + "\n" +
+                 "Position Type: " + this.getPositionType() + "\n" +
+                 "Core Competency: " + this.getCoreCompetency()
+                );
+
+            return lineSeparator + jobListing + lineSeparator;
+//        System.out.println(lineSeparator + jobListing + lineSeparator);
+    }
+
 
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
