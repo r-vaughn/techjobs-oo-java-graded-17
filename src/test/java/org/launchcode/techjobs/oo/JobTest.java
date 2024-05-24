@@ -49,21 +49,22 @@ public class JobTest {
 //        toString() should return a string containing blank line at beginning and end of job information
 
         Job testJob = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-
-//        String firstChar = String.valueOf(testJob.toString().charAt(0));
-//        String lastChar = String.valueOf(testJob.toString().charAt(testJob.toString().length()-1));
-//
-//        assertEquals(firstChar, lineSeparator());
-//        assertEquals(lastChar, lineSeparator());
-//    }
         String lineSeparator = System.lineSeparator();
 
-        String firstCharTwo = testJob.toString().substring(0, 2);
-        String lastCharTwo = testJob.toString().substring(testJob.toString().length()-2, testJob.toString().length());
+        String firstChar = String.valueOf(testJob.toString().charAt(0));
+        String lastChar = String.valueOf(testJob.toString().charAt(testJob.toString().length()-1));
 
-        assertEquals(firstCharTwo, lineSeparator);
-        assertEquals(lastCharTwo, lineSeparator);
+        assertEquals(firstChar, lineSeparator);
+        assertEquals(lastChar, lineSeparator);
     }
+
+
+//        String firstCharTwo = testJob.toString().substring(0, 2);
+//        String lastCharTwo = testJob.toString().substring(testJob.toString().length()-2, testJob.toString().length());
+//
+//        assertEquals(firstCharTwo, lineSeparator);
+//        assertEquals(lastCharTwo, lineSeparator);
+//    }
 
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
