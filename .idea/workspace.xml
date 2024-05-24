@@ -73,7 +73,7 @@
     "Gradle.JobTest.testSettingJobId.executor": "Run",
     "Gradle.JobTest.testToStringContainsCorrectLabelsAndData.executor": "Debug",
     "Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor": "Debug",
-    "Gradle.TestTaskFive.executor": "Run",
+    "Gradle.TestTaskFive.executor": "Debug",
     "Gradle.TestTaskFive.testTestToStringHandlesEmptyFieldExists.executor": "Run",
     "Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData.executor": "Debug",
     "Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine.executor": "Debug",
@@ -90,7 +90,7 @@
     "last_opened_file_path": "C:/Users/rvaug/Documents/LaunchCode/Unit-2/java-practice/chapter-14"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.JobTest">
+  <component name="RunManager" selected="Gradle.JobTest.testToStringStartsAndEndsWithNewLine">
     <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -233,10 +233,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.JobTest" />
         <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
-        <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
+        <item itemvalue="Gradle.JobTest" />
         <item itemvalue="Gradle.TestTaskFive" />
+        <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
         <item itemvalue="Gradle.TestTaskFour" />
       </list>
     </recent_temporary>
@@ -290,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716568357054</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Task Five: Code toString to Pass the First Test">
+      <option name="closed" value="true" />
+      <created>1716569536616</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716569536616</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -322,16 +330,6 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java</url>
           <line>55</line>
           <option name="timeStamp" value="27" />
@@ -340,6 +338,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskFive.java</url>
           <line>40</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -56,13 +56,13 @@ public class JobTest {
 //        assertEquals(firstChar, lineSeparator());
 //        assertEquals(lastChar, lineSeparator());
 //    }
-
+        String lineSeparator = System.lineSeparator();
 
         String firstCharTwo = testJob.toString().substring(0, 2);
         String lastCharTwo = testJob.toString().substring(testJob.toString().length()-2, testJob.toString().length());
 
-        assertEquals(firstCharTwo, lineSeparator());
-        assertEquals(lastCharTwo, lineSeparator());
+        assertEquals(firstCharTwo, lineSeparator);
+        assertEquals(lastCharTwo, lineSeparator);
     }
 
     @Test
