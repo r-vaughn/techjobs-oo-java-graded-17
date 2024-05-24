@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task Four Complete.">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task Five: Code toString to Pass the First Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +72,7 @@
     "Gradle.JobTest.testJobConstructorSetsAllFields.executor": "Run",
     "Gradle.JobTest.testSettingJobId.executor": "Run",
     "Gradle.JobTest.testToStringContainsCorrectLabelsAndData.executor": "Debug",
-    "Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor": "Run",
+    "Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor": "Debug",
     "Gradle.TestTaskFive.executor": "Run",
     "Gradle.TestTaskFive.testTestToStringHandlesEmptyFieldExists.executor": "Run",
     "Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData.executor": "Debug",
@@ -116,7 +115,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testToStringContainsCorrectLabelsAndData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JobTest.testToStringStartsAndEndsWithNewLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,7 +128,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringContainsCorrectLabelsAndData&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringStartsAndEndsWithNewLine&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -164,30 +163,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTaskFive.testToStringContainsCorrectLabelsAndData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFive.testToStringContainsCorrectLabelsAndData&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="TestTaskFive.testToStringStartsAndEndsWithNewLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -212,6 +187,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TestTaskFour" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFour&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="JobTest" type="JUnit" factoryName="JUnit">
       <module name="techjobs-oo-java17-graded.test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -226,19 +225,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.JobTest" />
-      <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
+      <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
       <item itemvalue="Gradle.TestTaskFive" />
-      <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
       <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
+      <item itemvalue="Gradle.TestTaskFour" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.JobTest" />
-        <item itemvalue="Gradle.TestTaskFive" />
+        <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
         <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
-        <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
-        <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
+        <item itemvalue="Gradle.TestTaskFive" />
+        <item itemvalue="Gradle.TestTaskFour" />
       </list>
     </recent_temporary>
   </component>
@@ -283,14 +282,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716515319271</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Task Five: Code toString to Pass the First Test">
+      <option name="closed" value="true" />
+      <created>1716568357054</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716568357054</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Task Two Complete." />
     <MESSAGE value="Task Three Complete." />
     <MESSAGE value="Task Four Complete." />
-    <option name="LAST_COMMIT_MESSAGE" value="Task Four Complete." />
+    <MESSAGE value="Task Five: Code toString to Pass the First Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task Five: Code toString to Pass the First Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -315,12 +323,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>65</line>
+          <line>73</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>75</line>
+          <line>83</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

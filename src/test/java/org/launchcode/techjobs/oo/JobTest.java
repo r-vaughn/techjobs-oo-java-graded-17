@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 import static java.lang.System.lineSeparator;
+import static org.junit.Assert.assertEquals;
 import static org.testng.Assert.*;
 
 public class JobTest {
@@ -48,6 +49,13 @@ public class JobTest {
 //        toString() should return a string containing blank line at beginning and end of job information
 
         Job testJob = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+
+//        String firstChar = String.valueOf(testJob.toString().charAt(0));
+//        String lastChar = String.valueOf(testJob.toString().charAt(testJob.toString().length()-1));
+//
+//        assertEquals(firstChar, lineSeparator());
+//        assertEquals(lastChar, lineSeparator());
+//    }
 
 
         String firstCharTwo = testJob.toString().substring(0, 2);
