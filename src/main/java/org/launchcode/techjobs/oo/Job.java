@@ -52,17 +52,45 @@ public class Job {
     public String toString() {
 
         String lineSeparator = System.lineSeparator();
-        String jobListing =
-                ("ID: " + this.getId() + "\n" +
-                 "Name: " + this.getName() + "\n" +
-                 "Employer: " + this.getEmployer() + "\n" +
-                 "Location: " + this.getLocation() + "\n" +
-                 "Position Type: " + this.getPositionType() + "\n" +
-                 "Core Competency: " + this.getCoreCompetency()
-                );
+
+        String jobName = this.getName();
+        String jobEmployer= this.getEmployer().toString();
+        String jobLocation = this.getLocation().toString();
+        String jobPositionType = this.getPositionType().toString();
+        String jobCoreCompetency = this.getCoreCompetency().toString();
+
+        if (jobName == "") {
+            jobName = "Data not available";
+        }
+
+        if (jobEmployer == "") {
+            jobEmployer = "Data not available";
+        }
+
+        if (jobLocation == "") {
+            jobLocation = "Data not available";
+        }
+
+        if (jobPositionType == "") {
+            jobPositionType = "Data not available";
+        }
+
+        if (jobCoreCompetency == "") {
+            jobCoreCompetency = "Data not available";
+        }
+
+
+
+        String jobListing = (
+            "ID: " + this.getId() + "\n" +
+            "Name: " + jobName + "\n" +
+            "Employer: " + jobEmployer + "\n" +
+            "Location: " + jobLocation + "\n" +
+            "Position Type: " + jobPositionType + "\n" +
+            "Core Competency: " + jobCoreCompetency
+        );
 
             return lineSeparator + jobListing + lineSeparator;
-//        System.out.println(lineSeparator + jobListing + lineSeparator);
     }
 
 
