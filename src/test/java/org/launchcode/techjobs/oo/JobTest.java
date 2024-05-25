@@ -84,34 +84,12 @@ public class JobTest {
     @Test
     public void testToStringHandlesEmptyField() {
 
-        Job testJob = new Job("Product tester", new Employer(""),new Location("Desert"), new PositionType(""), new CoreCompetency("Persistence"));
+        Job testJob = new Job("", new Employer(""),new Location(""), new PositionType(""), new CoreCompetency(""));
 
-        String jobName = testJob.getName();
-        String jobEmployer= testJob.getEmployer().toString();
-        String jobLocation = testJob.getLocation().toString();
-        String jobPositionType = testJob.getPositionType().toString();
-        String jobCoreCompetency = testJob.getCoreCompetency().toString();
-
-        if (jobName == "") {
-            jobName = "Data not available";
-        }
-
-        if (jobEmployer == "") {
-            jobEmployer = "Data not available";
-        }
-
-        if (jobLocation == "") {
-            jobLocation = "Data not available";
-        }
-
-        if (jobPositionType == "") {
-            jobPositionType = "Data not available";
-        }
-
-        if (jobCoreCompetency == "") {
-            jobCoreCompetency = "Data not available";
-        }
-//        assertEquals("Data not available", String.valueOf(testJob.getEmployer());
-        assertTrue(jobEmployer == "Data not available");
+        assertTrue(testJob.toString().contains("Name: Data not available"));
+        assertTrue(testJob.toString().contains("Employer: Data not available"));
+        assertTrue(testJob.toString().contains("Location: Data not available"));
+        assertTrue(testJob.toString().contains("Position Type: Data not available"));
+        assertTrue(testJob.toString().contains("Core Competency: Data not available"));
     }
 }
